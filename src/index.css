@@ -11,10 +11,11 @@ iframe {
   height: auto !important;
 }
 
-body {
-  overflow-x: hidden;
+div[id^="Clever"], iframe {
+  z-index: 9999 !important;
+  position: relative !important;
 }
 
-div[id^="CleverCore"] {
-  z-index: 999999 !important;
+body {
+  overflow-x: visible;
 }

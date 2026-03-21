@@ -11,7 +11,12 @@ const CleverAds = () => {
     script.type = "text/javascript";
     script.setAttribute("data-cfasync", "false");
 
-    document.body.appendChild(script);
+    document.head.appendChild(script);
+
+    return () => {
+      // optional cleanup
+      // document.head.removeChild(script);
+    };
   }, []);
 
   return (
@@ -19,17 +24,16 @@ const CleverAds = () => {
       id="clever-ad-container"
       style={{
         width: "100%",
-        minHeight: "250px",   // ✅ FIXED
+        minHeight: "250px",   // ✅ fixed
         margin: "20px 0",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
+        display: "block",
         overflow: "visible",
         position: "relative",
         zIndex: 9999,
+        textAlign: "center",
         background: "#fff"
       }}
-    />
+    ></div>
   );
 };
 
