@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navabar';
 import MatchCard from './components/MatchCard';
+import CleverAds from './components/Adbar';
 import { liveMatches, newsUpdates } from './data';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
       <Navbar />
+      <CleverAds />
 
       {/* Hero Section */}
       <div className="bg-cricketDark text-white py-12 px-4 text-center">
