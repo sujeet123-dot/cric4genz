@@ -10,6 +10,7 @@ const CleverAds = () => {
     script.async = true;
     script.type = "text/javascript";
     script.setAttribute("data-cfasync", "false");
+    script.setAttribute("data-debug", "true");
 
     document.head.appendChild(script);
 
@@ -23,7 +24,7 @@ const CleverAds = () => {
     <div
       id="clever-ad-container"
       style={{
-        width: "100%",
+        width: "100vw",
         minHeight: "250px",   // ✅ fixed
         margin: "20px 0",
         display: "block",
