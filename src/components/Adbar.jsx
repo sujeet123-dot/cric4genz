@@ -35,7 +35,18 @@ const CleverAds = () => {
     document.body.appendChild(script);
   }, []);
 
-  return <div style={{ minHeight: "250px" }}></div>;
+  return <div
+      style={{
+        width: "100%",
+        height: height,
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        overflow: "visible",
+        position: "relative",
+        zIndex: 9999
+      }}
+    />;
 };
 
 export default CleverAds;
