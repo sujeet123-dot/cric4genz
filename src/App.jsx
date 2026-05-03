@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import CleverAds from './components/Adbar';
+// import CleverAds from './components/Adbar';
 import Home from './pages/Home';
 import LiveScores from './pages/LiveScores';
 import Series from './pages/Series';
@@ -27,7 +27,6 @@ function App() {
         </Routes>
       </main>
       <Footer />
-      <CleverAds />
     </div>
   );
 }
