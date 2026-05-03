@@ -1,14 +1,15 @@
 <!doctype html>
 <html lang="en">
-  <script id="CleverCoreLoader100160" 
-  src="https://scripts.cleverwebserver.com/70bf89b6babed48f4117f612085c1c93.js" 
-  async="" 
-  type="text/javascript" 
-  data-target="null" 
-  data-callback="put-your-callback-function-here" 
-  data-callback-url-click="put-your-click-macro-here" 
-  data-callback-url-view="put-your-view-macro-here">
-</script>
+  <script
+    id="CleverCoreLoader100160"
+    src="https://scripts.cleverwebserver.com/70bf89b6babed48f4117f612085c1c93.js"
+    async=""
+    type="text/javascript"
+    data-target="null"
+    data-callback="put-your-callback-function-here"
+    data-callback-url-click="put-your-click-macro-here"
+    data-callback-url-view="put-your-view-macro-here"
+  ></script>
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -80,11 +81,13 @@
           var a,
             c = document.createElement("script"),
             f = window.frameElement;
+
           c.id = "CleverCoreLoader100160";
           c.src =
             "https://scripts.cleverwebserver.com/70bf89b6babed48f4117f612085c1c93.js";
           c.async = true;
           c.type = "text/javascript";
+
           c.setAttribute(
             "data-target",
             window.name || (f && f.getAttribute("id")),
@@ -95,18 +98,21 @@
             "put-your-click-macro-here",
           );
           c.setAttribute("data-callback-url-view", "put-your-view-macro-here");
+
           try {
             a =
               parent.document.getElementsByTagName("script")[0] ||
               document.getElementsByTagName("script")[0];
           } catch (e) {
-            a = false;
+            a = null;
           }
-          a(
-            (a =
+
+          if (!a) {
+            a =
               document.getElementsByTagName("head")[0] ||
-              document.getElementsByTagName("body")[0]),
-          );
+              document.getElementsByTagName("body")[0];
+          }
+
           a.parentNode.insertBefore(c, a);
         })(document, window);
       }
