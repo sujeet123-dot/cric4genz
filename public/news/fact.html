@@ -8,7 +8,12 @@
     <style>
       body {
         margin: 0;
-        font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          sans-serif;
         background: #f3f4f6;
         color: #1f2937;
       }
@@ -52,14 +57,35 @@
     </header>
     <main>
       <div class="card">
-        <p>This page is a placeholder. Cricket facts and trivia content will be added here soon.</p>
-        <script async="" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
-        <div id="gpt-passback" data-google-query-id="CNeglNyAsJUDFfZuKgkdeDwB4w" style="position: relative;">
-  
-          <div id="google_ads_iframe_/1007232/Indiatodayne_ROS_300x250_PB-3_0__container__" style="border: 0pt;">
-            <iframe id="google_ads_iframe_/1007232/Indiatodayne_ROS_300x250_PB-3_0" name="google_ads_iframe_/1007232/Indiatodayne_ROS_300x250_PB-3_0" title="3rd party ad content" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true">
-            </iframe>
-          </div>
+        <p>
+          This page is a placeholder. Cricket facts and trivia content will be
+          added here soon.
+        </p>
+        <script
+          async
+          src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          async
+          src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+          crossorigin="anonymous"
+        ></script>
+        <div id="gpt-passback">
+          <script>
+            window.googletag = window.googletag || { cmd: [] };
+            googletag.cmd.push(function () {
+              googletag
+                .defineSlot(
+                  "/1007232/Indiatodayne_ROS_300x250_PB-3",
+                  [300, 250],
+                  "gpt-passback",
+                )
+                .addService(googletag.pubads());
+              googletag.enableServices();
+              googletag.display("gpt-passback");
+            });
+          </script>
         </div>
       </div>
     </main>
