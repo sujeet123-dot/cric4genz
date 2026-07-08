@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Analytics from './components/Analytics';
 // import CleverAds from './components/Adbar';
 import Home from './pages/Home';
 import LiveScores from './pages/LiveScores';
@@ -27,6 +28,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      <Analytics />
     </div>
   );
 }
