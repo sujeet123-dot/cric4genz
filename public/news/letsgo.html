@@ -17,23 +17,36 @@
         padding: 20px;
       }
 
-      /* 1. Flexbox container to align items in a row */
+      /* The Scroll Container */
       main {
         display: flex;
-        flex-wrap: wrap; /* Allows wrapping to a new line if there are more than 5 */
         gap: 15px;
-        justify-content: center; /* Centers the row of iframes */
+        overflow-x: auto; /* Enables horizontal swiping/scrolling */
+        overflow-y: hidden;
+        padding: 10px 0;
+        
+        /* Smooth scrolling behavior for mobile touch */
+        -webkit-overflow-scrolling: touch; 
+        scroll-snap-type: x mandatory; /* Makes ads snap perfectly into place */
       }
 
-      /* 2. Dynamically calculate the width for exactly 5 per row */
+      /* Customizing the scrollbar so it looks clean */
+      main::-webkit-scrollbar {
+        height: 6px;
+      }
+      main::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 10px;
+      }
+
+      /* Strict Dimensions for your Ad Units */
       iframe {
-        width: calc((100% - (15px * 4)) / 5);
-        min-width: 300px; /* Prevents them from getting too squished on smaller screens */
+        width: 300px;
         height: 250px;
         border: none;
         background: #fff;
-        border-radius: 8px; /* Optional: adds a clean modern look */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        flex-shrink: 0; /* CRITICAL: Prevents the browser from squishing the 300px width */
+        scroll-snap-align: start; /* Snapping point for mobile swiping */
       }
     </style>
   </head>
