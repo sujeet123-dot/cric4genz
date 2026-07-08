@@ -13,159 +13,40 @@
 
       body {
         background: #f5f5f5;
-        font-family: Arial, Helvetica, sans-serif;
         padding: 20px;
-      }
-
-      /* The Scroll Container */
-      main {
         display: flex;
-        gap: 15px;
-        overflow-x: auto; /* Enables horizontal swiping/scrolling */
-        overflow-y: hidden;
-        padding: 10px 0;
-        
-        /* Smooth scrolling behavior for mobile touch */
-        -webkit-overflow-scrolling: touch; 
-        scroll-snap-type: x mandatory; /* Makes ads snap perfectly into place */
+        justify-content: center;
       }
 
-      /* Customizing the scrollbar so it looks clean */
-      main::-webkit-scrollbar {
-        height: 6px;
-      }
-      main::-webkit-scrollbar-thumb {
-        background: #ccc;
-        border-radius: 10px;
+      /* Container automatically adjusts columns based on available space */
+      main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 300px);
+        gap: 20px;
+        width: 100%;
+        max-width: 1600px; /* Adjust based on maximum width preference */
+        justify-content: center;
       }
 
-      /* Strict Dimensions for your Ad Units */
+      /* Fixed sizes protect ad dimensions from distortion */
       iframe {
         width: 300px;
         height: 250px;
         border: none;
         background: #fff;
-        flex-shrink: 0; /* CRITICAL: Prevents the browser from squishing the 300px width */
-        scroll-snap-align: start; /* Snapping point for mobile swiping */
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        border-radius: 4px;
       }
     </style>
   </head>
   <body>
     <main>
-      <script
-        async
-        src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
-        crossorigin="anonymous"
-      ></script>
-
-      <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-       <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-       <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-       <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-       <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-       <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-       <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-       <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-       <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        src="https://www.cric4genz.in/news/fact2.html"
-        loading="lazy"
-      ></iframe>
+        <iframe src="https://www.cric4genz.in/news/fact2.html" loading="lazy"></iframe>
+        <iframe src="https://www.cric4genz.in/news/fact2.html" loading="lazy"></iframe>
+        <iframe src="https://www.cric4genz.in/news/fact2.html" loading="lazy"></iframe>
+        <iframe src="https://www.cric4genz.in/news/fact2.html" loading="lazy"></iframe>
+        <iframe src="https://www.cric4genz.in/news/fact2.html" loading="lazy"></iframe>
+        <iframe src="https://www.cric4genz.in/news/fact2.html" loading="lazy"></iframe>
     </main>
   </body>
 </html>

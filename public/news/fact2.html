@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cricket Facts | Cric4GenZ</title>
+    <title>Ad Slot</title>
     <script
       async
       src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
@@ -12,32 +12,30 @@
     <script>
       window.googletag = window.googletag || { cmd: [] };
       googletag.cmd.push(function () {
-        
-        // 1. Define screen size mappings
-        var sizeMapping = googletag.sizeMapping()
-          // On Desktop (Screens >= 1024px wide), allow larger banners
-          .addSize([1024, 768], [[300, 250], [336, 280]])
-          // On Tablet (Screens >= 768px wide), serve standard square boxes
-          .addSize([768, 1024], [300, 250])
-          // On Mobile (Screens >= 0px wide), serve mobile-friendly banners
-          .addSize([0, 0], [[300, 50], [320, 50], [300, 250]])
-          .build();
-
-        // 2. Apply mapping to the ad slot
         googletag
           .defineSlot(
             "/1007232/Indiatodayne_ROS_300x250_PB-1",
-            [[300, 250]], // Default fallback size
+            [300, 250],
             "gpt-passback"
           )
-          .defineSizeMapping(sizeMapping) // Attaches responsive behavior
           .addService(googletag.pubads());
-          
         googletag.enableServices();
       });
     </script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #fff;
+      }
+    </style>
   </head>
-  <body style="margin:0; padding:0; display:flex; justify-content:center; align-items:center;">
+  <body>
     <div id="gpt-passback">
       <script>
         googletag.cmd.push(function () {
