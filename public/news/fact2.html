@@ -1,47 +1,15 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ad Slot</title>
-    <script
-      async
-      src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      window.googletag = window.googletag || { cmd: [] };
-      googletag.cmd.push(function () {
-        googletag
-          .defineSlot(
-            "/1007232/Indiatodayne_ROS_300x250_PB-1",
-            [300, 250],
-            "gpt-passback"
-          )
-          .addService(googletag.pubads());
-        googletag.enableServices();
-      });
-    </script>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background: #fff;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="gpt-passback">
-      <script>
-        googletag.cmd.push(function () {
-          googletag.display("gpt-passback");
-        });
-      </script>
-    </div>
-  </body>
+<html>
+<body>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<div id="gpt-passback">
+  <script>
+    window.googletag = window.googletag || {cmd: []};
+    googletag.cmd.push(function() {
+    googletag.defineSlot('/1007232/Indiatodayne_ROS_300x250_PB-1', [300, 250], 'gpt-passback').addService(googletag.pubads());
+    googletag.enableServices();
+    googletag.display('gpt-passback');
+    });
+  </script>
+</div>
+</body>
 </html>
